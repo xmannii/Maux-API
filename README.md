@@ -1,3 +1,4 @@
+# ![Maux-API Banner](static/banner.png)
 # Maux-API: RAG AI Workflow Simplified 🚀
 
 Welcome to **Maux-API** – an open-source API designed to help users quickly create RAG (Retrieval-Augmented Generation) AI workflows. Built by the team at [ai.maux.space](https://ai.maux.space), this project is free for anyone to use, with a special focus on supporting the Persian language.
