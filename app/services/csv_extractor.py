@@ -6,8 +6,7 @@ async def extract(file):
         content = await file.read()
         csv_file = io.StringIO(content.decode('utf-8'))
         df = pd.read_csv(csv_file)
-        
-        # Convert DataFrame to a list of dictionaries
+
         records = df.to_dict('records')
         
         return records

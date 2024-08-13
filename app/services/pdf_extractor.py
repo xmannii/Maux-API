@@ -11,7 +11,7 @@ async def extract(file):
         extracted_content = []
         for page_number, page in enumerate(pdf_reader.pages):
             text = page.extract_text()
-            if text:  # Only add if text is not None
+            if text: 
                 extracted_content.append(ExtractedContent(text=text.strip(), page_number=page_number + 1))
         
         return extracted_content

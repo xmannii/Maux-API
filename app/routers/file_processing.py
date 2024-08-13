@@ -39,8 +39,8 @@ async def extract_content(file: UploadFile = File(...)):
         extraction_end = datetime.now()
         extraction_duration = extraction_end - extraction_start
         
-        # Process the extracted content
-        total_word_count = sum(len(page.text.split()) for page in content)  # Count words in all pages
+
+        total_word_count = sum(len(page.text.split()) for page in content)  
         
         logger.info(f"Successfully extracted content from {file.filename}")
         
@@ -49,7 +49,7 @@ async def extract_content(file: UploadFile = File(...)):
             file_type=file_extension,
             extraction_time=extraction_duration,
             word_count=total_word_count,
-            content=content  # This is now a list of ExtractedContent
+            content=content 
         )
     except Exception as e:
         logger.error(f"Error processing file {file.filename}: {str(e)}", exc_info=True)
