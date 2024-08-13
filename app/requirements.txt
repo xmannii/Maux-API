@@ -1,0 +1,9 @@
+fastapi 
+uvicorn
+requests
+tiktoken
+docx
+PyPDF2
+pandas
+sentence-transformers
+numpy
