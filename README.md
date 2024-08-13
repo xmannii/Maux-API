@@ -30,7 +30,9 @@ To get started with Maux-API, follow these steps:
 3. **Install the Required Dependencies:**
 
     ```bash
+    cd app
     pip install -r requirements.txt
+    cd ..
     ```
 
 4. **Run the API:**
